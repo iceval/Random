@@ -26,6 +26,36 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void minus(View view) {
-
+        EditText num1 =
+                (EditText) this.findViewById(R.id.num1);
+        String num1text = num1.getText().toString();
+        EditText num2 =
+                (EditText) this.findViewById(R.id.num2);
+        String num2text = num2.getText().toString();
+        TextView out =
+                (TextView) this.findViewById(R.id.out);
+        out.setText(""+(Double.parseDouble(num1text) - Double.parseDouble(num2text)));
+    }
+    public void multiply(View v){
+        EditText num1 =
+                (EditText) this.findViewById(R.id.num1);
+        String num1text = num1.getText().toString();
+        EditText num2 =
+                (EditText) this.findViewById(R.id.num2);
+        String num2text = num2.getText().toString();
+        TextView out =
+                (TextView) this.findViewById(R.id.out);
+        out.setText(""+(Double.parseDouble(num1text) * Double.parseDouble(num2text)));
+    }
+    public void divide(View v){
+        EditText num1 =
+                (EditText) this.findViewById(R.id.num1);
+        String num1text = num1.getText().toString();
+        EditText num2 =
+                (EditText) this.findViewById(R.id.num2);
+        String num2text = num2.getText().toString();
+        TextView out =
+                (TextView) this.findViewById(R.id.out);
+        out.setText(""+(Double.parseDouble(num1text) / Double.parseDouble(num2text)));
     }
 }

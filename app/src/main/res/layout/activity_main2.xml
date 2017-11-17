@@ -3,42 +3,53 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="20dp">
 
 
     <EditText
         android:id="@+id/num1"
         android:hint="@string/enter"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+    android:layout_height="wrap_content"
+        android:text="1234"
+        android:textSize="26dp"/>
     <EditText
         android:id="@+id/num2"
         android:hint="@string/enter"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="466"
+        android:textSize="26dp"/>
         />
     <TextView
         android:id="@+id/out"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="567"
+        android:textSize="26dp"/>
     <Button
         android:onClick="plus"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/plus" />
     <Button
         android:onClick="minus"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/minus" />
     <Button
         android:onClick="multiply"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/multiply" />
     <Button
         android:onClick="divide"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/divide" />
 </LinearLayout>
